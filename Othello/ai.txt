@@ -1,0 +1,35 @@
+# April Gustafson
+# CS5001
+# Homework 7
+# November 20, 2018
+
+Did you attempt to make your computer "smart"? How did you determine which piece
+to play next?
+> The computer chooses the move that will flip the greatest number of tiles.
+If there are two or more moves that flip the same number of tiles, the computer
+just chooses the first move in the dictionary.
+
+Is your computer as smart as you would like?
+> My computer could be smarter.  I could add method to determine a better move
+if there is more than one move that will flip the most number of tiles.
+
+How often did your computer beat you?
+> Actually, the computer beat me almost every time (!), although I am not sure
+if that can be attributed to a "smart" computer or a terrible human! ;) When I
+initially created the computer method to choose a move, I had it choose a random
+move out of the valid moves dictionary.  With this method, I beat the computer
+almost every time, so the longest flips method is definitely more effective.
+
+How would you improve it in the future?
+> I would research Othello strategy to learn about how to choose the most
+effective moves.
+> One thing I don't like about my computer strategy is that if the human plays
+the same tiles every time, the computer will respond in the same way every time.
+I would like to add some element that allows the computer to "learn" which moves
+are most effective by keeping track of game results and weighting move choices
+at the end of the game based on game results.  I think this would lead to the
+computer playing a slightly different game each time even if the user tried to
+play the same moves.
+> Finally, this doesn't have to do with the AI, but one thing that I need to
+fix in the game is its ending.  The onscreenclick function really confuses me
+and I couldn't figure out how to get the program to terminate at the end.  
