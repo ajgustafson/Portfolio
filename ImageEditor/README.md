@@ -150,29 +150,6 @@ View uses the Java Swing library. We also added a new driver that takes differen
 arguments than previously-- the ones described earlier. This new driver now initializes the view
 if necessary (ie when the user selects interactive mode).
 
-We added methods to the controller class. We did have to change some method signatures in the 
-controller interface and the controller class. Previously the constructor of the Controller class 
-took in an InputStream and the signature of the interface method controlGo took in a model. This 
-worked for the last assignment, but didn't make sense for this assignment. That is because we added
-a bunch of methods to IController (and thus controller) that required a model reference. This is
-because we wanted the view to interact with the controller and not directly interact with the model.
-To facilitate this we added methods in the controller that the view could call which would then have
-the controller interact with the model in the appropriate way. Because all of these methods required
-a model reference it made more sense to have the controller store a model reference as a field and
-thus this needed to be initialized in the constructor. However, by changing the constructor, the
-controlGo method still needed a reference to an InputStream so it made sense to pass that in as an
-argument and have it no longer take the model as an argument since that was now a field in the 
-controller.
-
-Although these changes are not ideal we deemed them necessary in order to have full functionality
-of our program and to avoid repeating large bits of code (as controlGo could now be used for
-both script mode and through the batch script button in the GUI).
-
-Finally, based on feedback from Assignment 9, we removed I/O actions from the model and delegated 
-them to the controller.  This required changing the method signature of the loadImage() method in 
-the model to take an array as a parameter instead of a filename, and removing the saveImage() method 
-from the model.
-
 ## Road Map
 Currently, this project supports generating these images:
 - Horizontal rainbow (7 stripes in ROYGBIV order)
