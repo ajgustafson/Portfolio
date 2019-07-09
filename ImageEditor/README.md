@@ -21,9 +21,7 @@ the channel values in a given series of pixels.
 This project provides a number of features to generate images, including generating horizontal or 
 vertical rainbow patterns, and a checkerboard pattern. If the user is in script batch mode
 then they can also generate a French flag, a Greek flag, and a Swiss flag. These flag options are
-not offered in the GUI menus or buttons because we were told it was not required to be part of our
-final project. We left it as possible in the script mode so we wouldn't have to edit the previously
-written function in the controller.
+only offered in script mode as they were not required for the project.
 
 This project provides a number of features to edit images, including blurring an image, sharpening 
 an image, dithering an image, creating a mosaic from an image, changing the color of an image to 
@@ -38,11 +36,11 @@ appear on the same line separated by one or more spaces.  All supported commands
 The program will continue to process commands until there are no more lines in the file, or it 
 reaches a line in the file beginning with the command "quit". 
  
-To run the program from the MCVDriver main method, put the argument "-script" and
+To run the program from the MCVDriver main method, use the argument "-script" and
 set the file source path for the command text file as the second program argument for the 
 MCVDriver class main method.  Then run the MCVDriver main method.
 
-To run the program from the command line, download the Assignment10.jar file.  In the command line, 
+To run the program from the command line, download the ImageEditor.jar file.  In the command line, 
 type "java -jar" followed by the jar file name, "-script", and the batch command 
 file name (each separated by a space).
 
@@ -65,10 +63,10 @@ Lastly in the right panel of the GUI is a Batch Script text box. The user can ty
 the same format as the script text file described above and when they hit the "run batch script"
 button the script will run. The results will not be visible to the user inside the GUI.
 
-To run the program from the MCVDriver main method, put the argument "-interactive" in the run 
+To run the program from the MCVDriver.java file, put the argument "-interactive" in the run 
 configuration and run the MCVDriver main method.
 
-To run the program from the command line, download the Assignment10.jar file. In the command line,
+To run the program from the command line, download the ImageEditor.jar file. In the command line,
 type "java -jar" followed by the jar file name and "-interactive" (separated by a space).
 
 
@@ -148,7 +146,7 @@ quit
 We added an IView interface and a View class (which implements that interface) to our program. The
 View uses the Java Swing library. We also added a new driver that takes different command line 
 arguments than previously-- the ones described earlier. This new driver now initializes the view
-if necessary (ie when the user selects interactive mode).
+if necessary (i.e. when the user selects interactive mode).
 
 ## Road Map
 Currently, this project supports generating these images:
