@@ -1,0 +1,21 @@
+verticalRainbow 20 30
+save res/verticalRainbow.png
+frenchFlag 3
+save res/frenchflag.png
+horizontalRainbow 20 25
+save res/horizontalRainbow.png
+checkers 2
+save res/checkers.png
+swissFlag 100
+save res/swissFlag.png
+greekFlag 30
+save res/greekFlag.png
+horizontalRainbow 17 17
+save res/horizontalRainbow7.png
+greekFlag 27
+save res/greekFlag27.png
+frenchFlag 6
+save res/frenchFlag6.png
+verticalRainbow 50 100
+save res/verticalRainbow50.png
+quit

@@ -1,0 +1,25 @@
+load res/Shoes.png
+sepia
+save res/sepiaShoes.png
+load res/Shoes.png
+greyscale
+save res/greyscaleShoes.png
+load res/Shoes.png
+dither
+save res/ditheredShoes.png
+load res/Shoes.png
+mosaic 1000
+save res/mosaicShoes.png
+load res/ClearVision.png
+sepia
+save res/sepiaVision.png
+load res/ClearVision.png
+greyscale
+save res/greyscaleVision.png
+load res/ClearVision.png
+dither
+save res/ditheredVision.png
+load res/ClearVision.png
+mosaic 4000
+save res/mosaicVision.png
+quit
